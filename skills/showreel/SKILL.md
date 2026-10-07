@@ -20,7 +20,7 @@ Output: 1920x1080, 60 fps. Stack: TypeScript + three.js, bun + Vite, headless Ch
 
 ## Where the kit lives
 
-The project folder is `Motion_as_kit` in the user's Documents folder (`C:\Users\bilal\Documents\Motion_as_kit` on their Windows PC). If it is not reachable or has moved, ask the user where it is. Keep the folder structure exactly as it is: the scripts use relative paths.
+The project folder is `Motion_as_kit` in the user's Documents folder (`C:\Users\awaiz\OneDrive\Documents\Motion_as_kit` on their Windows PC). If it is not reachable or has moved, ask the user where it is. Keep the folder structure exactly as it is: the scripts use relative paths.
 
 Before the first change in a session, read `README.md`, `app/src/timeline.ts` and `app/src/engine/scene.ts`.
 
