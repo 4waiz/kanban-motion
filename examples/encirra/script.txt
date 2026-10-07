@@ -1,0 +1,8 @@
+# Encirra: 30 s square explainer (voice: af_nova). Concept on synthetic data, as the README says.
+Two hundred sensors. Four video feeds. One wind field.
+Encirra fuses them into a single CBRN picture.
+A concept command centre for Barakah, built on synthetic data.
+A gamma trend climbs in Unit 3.
+Encirra correlates the sources, sends the ground robot, and re-tasks the drone.
+Then a person validates. Recommendations are advisory. Nothing acts on its own.
+Encirra. Integrated CBRN situational awareness.

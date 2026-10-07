@@ -1,0 +1,101 @@
+{
+ "duration": 30,
+ "voice": {
+  "file": "audio/voiceover.wav",
+  "db": 0
+ },
+ "music": {
+  "file": "audio/music.mp3",
+  "db": -12,
+  "fade_in": 0.3,
+  "fade_out": 1.6
+ },
+ "sfx": [
+  {
+   "file": "sfx:interface/drop_001.ogg",
+   "t": "word:Two-0.04",
+   "db": -15
+  },
+  {
+   "file": "sfx:interface/drop_001.ogg",
+   "t": "word:Four-0.04",
+   "db": -15,
+   "rate": 1.12
+  },
+  {
+   "file": "sfx:interface/drop_001.ogg",
+   "t": "word:One-0.04",
+   "db": -15,
+   "rate": 1.26
+  },
+  {
+   "file": "sfx:impact/impactSoft_medium_001.ogg",
+   "t": "line:Encirra fuses-0.12",
+   "db": -11
+  },
+  {
+   "file": "sfx:impact/impactBell_heavy_000.ogg",
+   "t": "line:Encirra fuses+0.3",
+   "db": -18,
+   "lp": 5000
+  },
+  {
+   "file": "sfx:casino/card-slide-1.ogg",
+   "t": "line:A concept command-0.15",
+   "db": -17,
+   "lp": 5000,
+   "rate": 0.9
+  },
+  {
+   "file": "sfx:interface/switch_002.ogg",
+   "t": "word:gamma-0.15",
+   "db": -18
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": "line:A gamma trend+0.12",
+   "db": -17
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": "line:A gamma trend+1.47",
+   "db": -17
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": "word:correlates+0.0",
+   "db": -17
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": "word:sends+0.27",
+   "db": -18
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": "word:re-tasks+0.27",
+   "db": -18
+  },
+  {
+   "file": "sfx:impact/impactSoft_medium_004.ogg",
+   "t": "line:Then a person-0.1",
+   "db": -14
+  },
+  {
+   "file": "sfx:impact/impactSoft_medium_001.ogg",
+   "t": "line:Encirra. Integrated-0.12",
+   "db": -10
+  },
+  {
+   "file": "sfx:impact/impactBell_heavy_000.ogg",
+   "t": "line:Encirra. Integrated+0.5",
+   "db": -19,
+   "lp": 5000
+  }
+ ],
+ "duck": {
+  "music": 8,
+  "sfx": 5
+ },
+ "lufs": -14
+}

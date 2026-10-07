@@ -1,0 +1,13 @@
+/* BLUEBAN 813 palette and type, taken from apps/web/tailwind.config.ts and app/layout.tsx */
+:root {
+  --ink: #040915; --ink-2: #0A1630; --bone: #EAF1FF; --dim: #93A6CB;
+  --signal: #27C3F3; --signal-glow: rgba(39, 195, 243, .5);
+  --bg-a: #040915; --bg-b: #071a3a; --glow-a: rgba(47, 123, 255, .30); --glow-b: rgba(39, 195, 243, .14);
+  --accent: #27C3F3; --fg: #EAF1FF; --muted: #93A6CB; --surface: #0A1630;
+  --display: 'Exo 2', 'Inter', system-ui, sans-serif; --mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+.say { width: 82%; }
+.say p { font-weight: 700; letter-spacing: -0.02em; text-shadow: 0 4px 40px rgba(0, 0, 0, .6); }
+.st-num { font-family: 'Exo 2', sans-serif; font-weight: 700; }
+.sp-node b { font-family: 'Exo 2', sans-serif; letter-spacing: .08em; }
+.lg-tag { font-size: 44px; }

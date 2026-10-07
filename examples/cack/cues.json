@@ -1,0 +1,78 @@
+{
+ "duration": 15,
+ "music": {
+  "file": "audio/music.mp3",
+  "db": -7,
+  "fade_in": 0.2,
+  "fade_out": 1.2
+ },
+ "sfx": [
+  {
+   "file": "sfx:impact/impactSoft_medium_002.ogg",
+   "t": 0.3,
+   "db": -14
+  },
+  {
+   "file": "sfx:casino/card-slide-1.ogg",
+   "t": 2.1,
+   "db": -17,
+   "lp": 4000,
+   "rate": 0.7
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": 3.2,
+   "db": -16
+  },
+  {
+   "file": "sfx:interface/switch_007.ogg",
+   "t": 3.6,
+   "db": -19
+  },
+  {
+   "file": "sfx:interface/glitch_002.ogg",
+   "t": 4.15,
+   "db": -20
+  },
+  {
+   "file": "sfx:interface/glitch_002.ogg",
+   "t": 6.6,
+   "db": -14
+  },
+  {
+   "file": "sfx:interface/glitch_004.ogg",
+   "t": 7.35,
+   "db": -16
+  },
+  {
+   "file": "sfx:interface/glitch_002.ogg",
+   "t": 8.25,
+   "db": -18,
+   "rate": 0.9
+  },
+  {
+   "file": "sfx:interface/drop_001.ogg",
+   "t": 9.4,
+   "db": -16
+  },
+  {
+   "file": "sfx:casino/card-slide-1.ogg",
+   "t": 9.95,
+   "db": -18,
+   "lp": 4000,
+   "rate": 0.8
+  },
+  {
+   "file": "sfx:impact/impactSoft_medium_001.ogg",
+   "t": 12.35,
+   "db": -9
+  },
+  {
+   "file": "sfx:impact/impactBell_heavy_000.ogg",
+   "t": 12.8,
+   "db": -17,
+   "lp": 5000
+  }
+ ],
+ "lufs": -14
+}

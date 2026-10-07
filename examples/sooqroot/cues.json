@@ -1,0 +1,316 @@
+{
+ "duration": 30,
+ "music": {
+  "file": "audio/music.mp3",
+  "db": -6,
+  "fade_in": 0.05,
+  "fade_out": 1.5
+ },
+ "sfx": [
+  {
+   "file": "sfx:keyboard/keypress-001.wav",
+   "t": 0.35,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-008.wav",
+   "t": 0.5,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-015.wav",
+   "t": 0.65,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-022.wav",
+   "t": 0.8,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-029.wav",
+   "t": 1.07,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-004.wav",
+   "t": 1.22,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-011.wav",
+   "t": 1.37,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-018.wav",
+   "t": 1.52,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-025.wav",
+   "t": 1.84,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-032.wav",
+   "t": 1.99,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-007.wav",
+   "t": 2.14,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-014.wav",
+   "t": 2.51,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-021.wav",
+   "t": 2.66,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-028.wav",
+   "t": 2.81,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-003.wav",
+   "t": 2.96,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-010.wav",
+   "t": 3.11,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-017.wav",
+   "t": 6.2,
+   "db": -27,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-024.wav",
+   "t": 6.354,
+   "db": -27,
+   "lp": 6500,
+   "pan": 0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-031.wav",
+   "t": 6.508,
+   "db": -27,
+   "lp": 6500,
+   "pan": -0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-006.wav",
+   "t": 6.862,
+   "db": -27,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-013.wav",
+   "t": 7.015,
+   "db": -27,
+   "lp": 6500,
+   "pan": 0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-020.wav",
+   "t": 7.169,
+   "db": -27,
+   "lp": 6500,
+   "pan": -0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-027.wav",
+   "t": 7.323,
+   "db": -27,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-002.wav",
+   "t": 7.6,
+   "db": -27,
+   "lp": 6500,
+   "pan": 0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-009.wav",
+   "t": 7.754,
+   "db": -27,
+   "lp": 6500,
+   "pan": -0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-016.wav",
+   "t": 8.069,
+   "db": -27,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-023.wav",
+   "t": 8.223,
+   "db": -27,
+   "lp": 6500,
+   "pan": 0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-030.wav",
+   "t": 8.377,
+   "db": -27,
+   "lp": 6500,
+   "pan": -0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-005.wav",
+   "t": 8.654,
+   "db": -27,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-012.wav",
+   "t": 8.808,
+   "db": -27,
+   "lp": 6500,
+   "pan": 0.18
+  },
+  {
+   "file": "sfx:keyboard/keypress-019.wav",
+   "t": 8.962,
+   "db": -27,
+   "lp": 6500,
+   "pan": -0.18
+  },
+  {
+   "file": "sfx:impact/impactSoft_medium_002.ogg",
+   "t": 5.98,
+   "db": -12
+  },
+  {
+   "file": "sfx:casino/card-slide-1.ogg",
+   "t": 9.96,
+   "db": -16,
+   "lp": 5500
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": 10.5,
+   "db": -17
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": 12.05,
+   "db": -18
+  },
+  {
+   "file": "sfx:casino/card-slide-1.ogg",
+   "t": 13.96,
+   "db": -16,
+   "lp": 5500
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": 14.45,
+   "db": -17
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": 16.0,
+   "db": -18
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": 16.5,
+   "db": -19
+  },
+  {
+   "file": "sfx:casino/card-slide-1.ogg",
+   "t": 17.96,
+   "db": -16,
+   "lp": 5500
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": 18.45,
+   "db": -17
+  },
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": 19.6,
+   "db": -18
+  },
+  {
+   "file": "sfx:interface/drop_001.ogg",
+   "t": 22.15,
+   "db": -15,
+   "rate": 1
+  },
+  {
+   "file": "sfx:interface/drop_001.ogg",
+   "t": 22.5,
+   "db": -15,
+   "rate": 1.12
+  },
+  {
+   "file": "sfx:interface/drop_001.ogg",
+   "t": 22.85,
+   "db": -15,
+   "rate": 1.26
+  },
+  {
+   "file": "sfx:impact/impactSoft_medium_001.ogg",
+   "t": 25.98,
+   "db": -9
+  },
+  {
+   "file": "sfx:impact/impactBell_heavy_000.ogg",
+   "t": 26.45,
+   "db": -18,
+   "lp": 5000
+  }
+ ],
+ "lufs": -14
+}

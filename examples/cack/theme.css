@@ -1,0 +1,14 @@
+/* CACK palette and type, taken from site/css/app.css */
+:root {
+  --ink: #05080f; --ink-2: #0c1426; --bone: #e8eef8; --dim: #a3b3cc;
+  --signal: #22d3ee; --signal-glow: rgba(34, 211, 238, .45);
+  --bg-a: #05080f; --bg-b: #0a1022; --glow-a: rgba(14, 165, 198, .18); --glow-b: rgba(124, 58, 237, .20);
+  --accent: #22d3ee; --fg: #e8eef8; --muted: #a3b3cc; --surface: #0c1426;
+  --display: 'Inter', system-ui, sans-serif; --mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+.plate-end::before { content: ''; position: absolute; inset: 0;
+  background: radial-gradient(60% 55% at 50% 50%, rgba(5, 8, 15, .88), rgba(5, 8, 15, .35)); }
+.lg-title { font-weight: 200; font-size: 150px; letter-spacing: .22em; margin-right: -.22em; }
+.lg-tag { font: 500 26px var(--mono); letter-spacing: .32em; text-transform: uppercase; color: var(--muted); }
+.lg-badge { border-color: #8b5cf6; color: #e8eef8; }
+.lg-mark img { filter: drop-shadow(0 0 40px rgba(34, 211, 238, .35)); }

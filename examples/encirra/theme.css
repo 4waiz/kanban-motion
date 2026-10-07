@@ -1,0 +1,26 @@
+/* Encirra palette and type, taken from src/styles/index.css and src/components/ui/tone.ts */
+:root {
+  --ink: #0b0f14; --ink-2: #121922; --bone: #ece7df; --dim: #a9b3be;
+  --signal: #3cc8dc; --signal-glow: rgba(60, 200, 220, .45);
+  --bg-a: #0b0f14; --bg-b: #0e1319; --glow-a: rgba(60, 200, 220, .16); --glow-b: rgba(217, 111, 42, .12);
+  --accent: #3cc8dc; --fg: #ece7df; --muted: #a9b3be; --surface: #121922;
+  --display: 'Inter', system-ui, sans-serif; --mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+.st-num { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 96px; letter-spacing: -0.03em; }
+.st-label, .sp-node span { font-family: 'IBM Plex Sans Condensed', sans-serif; text-transform: uppercase; letter-spacing: .12em; font-size: 24px; }
+.st-card { padding: 34px 18px; }
+.st { left: 70px; right: 70px; }
+.lg-title { font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 600; font-size: 92px; letter-spacing: .24em; margin-right: -.24em; }
+.lg-tag { font-family: 'IBM Plex Sans Condensed', sans-serif; text-transform: uppercase; letter-spacing: .14em; font-size: 30px; color: var(--muted); }
+.lg-badge { font-family: 'IBM Plex Sans Condensed', sans-serif; letter-spacing: .1em; text-transform: uppercase; font-size: 22px; }
+.say { width: 86%; }
+.say p { font-weight: 600; letter-spacing: -0.025em; }
+.scr-call b { font-family: 'IBM Plex Mono', monospace; font-size: 20px; }
+/* caption band for full-bleed UI shots */
+.plate-band::before { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 330px;
+  background: linear-gradient(0deg, rgba(7, 10, 14, .96) 30%, rgba(7, 10, 14, 0)); }
+.plate-band .cap { font-size: 46px; font-weight: 600; letter-spacing: -0.015em; }
+.plate-tag { pointer-events: none; }
+.tag { position: absolute; left: 36px; top: 34px; padding: 8px 14px; border-radius: 8px; background: rgba(11, 15, 20, .82);
+  border: 1px solid rgba(60, 200, 220, .45); color: var(--accent); font: 500 20px 'IBM Plex Mono', monospace; letter-spacing: .06em; }
+.tag { left: auto; top: auto; right: 30px; bottom: 26px; background: rgba(11, 15, 20, .96); }

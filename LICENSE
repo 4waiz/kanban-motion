@@ -28,3 +28,7 @@ Kenney (https://kenney.nl) and "Keyboard Soundpack #1" by unicae_games
 
 The Kanban Studios name and the KS logo (docs/brand/) are marks of Kanban Studios. They are not
 licensed under the MIT License above and may not be used to endorse or brand other work.
+
+The example projects in examples/ and docs/examples/ (BLUEBAN 813, SooqRoot, Encirra, CACK and
+ROADTRACE) keep their own names, logos, screenshots and renders. Those assets are not licensed
+under the MIT License above; only the example reel code is.

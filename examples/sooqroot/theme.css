@@ -1,0 +1,14 @@
+/* SooqRoot palette and type, taken from tailwind.config.js and index.html */
+:root {
+  --ink: #0a0c0d; --ink-2: #121517; --bone: #f4f7f5; --dim: #9fb3a7;
+  --signal: #5ca87e; --signal-glow: rgba(92, 168, 126, .45);
+  --bg-a: #0a0c0d; --bg-b: #0d2419; --glow-a: rgba(42, 113, 76, .38); --glow-b: rgba(201, 156, 87, .14);
+  --accent: #8dc6a4; --fg: #f4f7f5; --muted: #9fb3a7; --surface: #121517;
+  --display: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif; --mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+.tw-lines { font-weight: 800; letter-spacing: -0.035em; }
+.tw-eyebrow { color: #c99c57; }
+.scr-call b { font-family: 'JetBrains Mono', 'Noto Naskh Arabic', monospace; }
+.st-num { font-weight: 800; }
+.lg-tag { font-size: 40px; max-width: 900px; line-height: 1.2; }
+.tw { left: 72px; right: 72px; }

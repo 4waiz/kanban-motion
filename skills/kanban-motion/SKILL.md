@@ -171,7 +171,7 @@ Copy `<skill-dir>/template/` to `kanban-motion-output/reel/`. Before the first c
 | `reel.js` | The timeline: `E(plate({...}), start, end)` per plate, with cuts from the voice via `cut('phrase')` |
 | `engine.js` | Preview, seeking and render hooks. Do not edit. |
 | `motion.js` | Toolkit: `range`, `ease`, closed-form `spring`, seeded `rng`/`hash`, `typed`, and voice sync `lineOf`, `wordOf`, `wordsIn`, `cut` |
-| `plates/*.js` | `paper` (graph-paper backdrop that breathes with the voice), `say` (kinetic words landing as spoken), `code` (typing editor), `shot` (real screenshot in a window), `outro` (name, pen underline, tagline, URL) |
+| `plates/*.js` | `paper` (graph-paper backdrop that breathes with the voice), `say` (kinetic words landing as spoken), `code` (typing editor), `shot` (real screenshot in a window), `outro` (name, pen underline, tagline, URL). For launch videos: `bg` (drifting gradient), `photo` (full-bleed image with a push and an optional scan-line "turn" to a second image), `screen` (real UI with camera keys and tracking callouts), `typewrite` (letter-by-letter headlines), `stats` (count-up numbers), `steps` (a pipeline lighting up on the voice), `cap` (captions of the line being spoken), `logo` (logo reveal with tagline, badge, URL and credit). For cinematic sequences: `space` (one seamless camera move through a 3D scene of morphing wireframe solids, a perspective grid and kinetic type in 3D) |
 | `style.css` | Palette and type tokens (ink, bone, signal orange). Swap in the project's exact colours and fonts. |
 | `audio/`, `data/`, `cues.json` | Voiceover and music; `words.json`, `lines.json` and `audio.json`; the sound cue sheet. The template ships a working demo of all three, so preview and render work immediately. Put images in `assets/`. |
 
@@ -185,6 +185,12 @@ node <skill-dir>/scripts/render.mjs video --dir reel --samples 4 --audio out/mix
 ```
 
 Render flags mirror the kit: `--samples` (motion-blur sub-frames, 4 for drafts, 8 to 12 for finals), `--shutter 0.5`, `--scale 2` (4K, ask first), `--crf 17`, `--from/--to`, `--fps`. Use `BROWSER_CHANNEL=msedge` or `BROWSER_PATH=...` if Chrome is missing. Vertical (1080x1920) and square (1080x1080) work by changing `width`/`height` in `reel.js`; recheck every plate's layout in stills when you do.
+
+Worked examples live in the repo's `examples/` folder (five real projects: voiced landscape, beat-cut vertical, voiced square explainer, and two 3D cinematic sequences). Read the one closest to the request before writing a new reel. Capture real UI as the "show the thing" material:
+- **Live sites:** use headless Chrome screenshots at 2x.
+- **Apps the user owns:** run them on localhost, using the app's own demo or "fill" sign-in if it has one.
+
+Then aim cameras and callouts with 0..1 fractions read off a gridded copy of each screenshot.
 
 ## Voiceover
 

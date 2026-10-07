@@ -1,0 +1,47 @@
+{
+ "duration": 27.894,
+ "lines": [
+  {
+   "i": 0,
+   "text": "Two hundred sensors. Four video feeds. One wind field.",
+   "s": 0.25,
+   "e": 3.659
+  },
+  {
+   "i": 1,
+   "text": "Encirra fuses them into a single CBRN picture.",
+   "s": 3.959,
+   "e": 7.389
+  },
+  {
+   "i": 2,
+   "text": "A concept command centre for Barakah, built on synthetic data.",
+   "s": 7.689,
+   "e": 11.367
+  },
+  {
+   "i": 3,
+   "text": "A gamma trend climbs in Unit 3.",
+   "s": 11.667,
+   "e": 13.881
+  },
+  {
+   "i": 4,
+   "text": "Encirra correlates the sources, sends the ground robot, and re-tasks the drone.",
+   "s": 14.181,
+   "e": 18.662
+  },
+  {
+   "i": 5,
+   "text": "Then a person validates. Recommendations are advisory. Nothing acts on its own.",
+   "s": 18.962,
+   "e": 23.467
+  },
+  {
+   "i": 6,
+   "text": "Encirra. Integrated CBRN situational awareness.",
+   "s": 23.767,
+   "e": 27.294
+  }
+ ]
+}

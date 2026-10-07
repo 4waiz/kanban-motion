@@ -1,0 +1,20 @@
+/* ROADTRACE palette and type, taken from src/app/globals.css */
+:root {
+  --ink: #050807; --ink-2: #0a0f0d; --bone: #ecf5ef; --dim: #829087;
+  --signal: #55f59a; --signal-glow: rgba(85, 245, 154, .45);
+  --bg-a: #050807; --bg-b: #08120d; --glow-a: rgba(85, 245, 154, .12); --glow-b: rgba(255, 180, 76, .10);
+  --accent: #55f59a; --fg: #ecf5ef; --muted: #829087; --surface: #0a0f0d;
+  --display: 'Geist', system-ui, sans-serif; --mono: 'Geist Mono', ui-monospace, monospace;
+}
+.plate-end::before { content: ''; position: absolute; inset: 0;
+  background: radial-gradient(70% 60% at 50% 50%, rgba(5, 8, 7, .86), rgba(5, 8, 7, .45)); }
+.lg-title { font-weight: 800; font-size: 132px; letter-spacing: .06em; }
+.lg-tag { font-weight: 500; font-size: 42px; }
+.lg-badge { font-family: 'Geist Mono', monospace; text-transform: uppercase; letter-spacing: .2em; font-size: 20px; }
+.lg-url { font-family: 'Geist Mono', monospace; }
+/* the snapshot inset: a capture card like the app's CAPTURED panel */
+.snap { position: absolute; right: 70px; top: 90px; width: 520px; border-radius: 14px; overflow: hidden;
+  border: 1px solid rgba(137, 255, 185, .35); background: #0a0f0d; box-shadow: 0 30px 80px rgba(0, 0, 0, .6); }
+.snap img { display: block; width: 100%; }
+.snap b { display: flex; justify-content: space-between; padding: 10px 14px; font: 600 18px 'Geist Mono', monospace; color: #55f59a; letter-spacing: .08em; }
+.snap b i { font-style: normal; color: #829087; }
