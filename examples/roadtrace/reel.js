@@ -1,4 +1,4 @@
-// ROADTRACE: 15 s cinematic sequence, 1920x1080. Kinetic typography, smooth shape transitions, 3D
+// ROADTRACE: 15 s cinematic sequence, 1920x1080, with a voiceover (af_bella). Kinetic typography, smooth shape transitions, 3D
 // elements and one seamless camera move that chases a car down the road past camera sites
 // RT-01 to RT-04. Words are ROADTRACE's own; the stills are the simulation's own renders.
 import { run, E } from './engine.js';
@@ -60,6 +60,9 @@ run({
   height: 1080,
   fps: 30,
   background: 'var(--ink)',
+  audio: 'audio/voiceover.wav',
+  words: 'data/words.json',
+  env: 'data/audio.json',
   timeline: () => [
     E(bg({ angle: 175 }), 0, END),
     E(space({

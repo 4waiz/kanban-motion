@@ -42,7 +42,7 @@ def script_tokens(text: str):
     out, li = [], 0
     for raw in text.splitlines():
         line = raw.strip()
-        if not line or line.startswith("#") or re.fullmatch(r"\[pause\s+[\d.]+\s*s?\]", line, re.I):
+        if not line or line.startswith("#") or re.fullmatch(r"\[(pause|at)\s+[\d.]+\s*s?\]", line, re.I):
             continue
         for tok in line.split():
             if norm(tok):

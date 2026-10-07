@@ -196,7 +196,7 @@ Then aim cameras and callouts with 0..1 fractions read off a gridded copy of eac
 
 Add one when the user asks for narration or a voiceover, or passes `--voice`. Details are in [references/voiceover.md](references/voiceover.md).
 
-1. **Write `script.txt`**: one line per beat, since lines become cuts. A blank line adds a longer pause; `[pause 0.8]` adds an exact one. Write numbers and acronyms the way they are spoken. Narration should add to the visuals rather than read them out, match the scene pacing, sound conversational, and be specific to the product. Budget about 2.5 words per second.
+1. **Write `script.txt`**: one line per beat, since lines become cuts. A blank line adds a longer pause; `[pause 0.8]` adds an exact one; `[at 6.0]` starts the next line at an exact time, to fit a voice onto an existing edit. Write numbers and acronyms the way they are spoken. Narration should add to the visuals rather than read them out, match the scene pacing, sound conversational, and be specific to the product. Budget about 2.5 words per second.
 2. **Generate it** with Kokoro, an open-weight voice that runs locally. The model downloads once (about 340 MB).
    ```sh
    uv run <skill-dir>/scripts/voiceover.py script.txt -o reel/audio/voiceover.wav --lines reel/data/lines.json --voice af_heart

@@ -1,0 +1,15 @@
+# SooqRoot: voice for the 30 s vertical edit (voice: am_michael). Each line lands on its scene's downbeat.
+[at 0.35]
+One order. Many farms. Confirmed before harvest.
+[at 6.15]
+Buyers don't write purchase orders. They write sentences.
+[at 10.15]
+SooqRoot reads the sentence. Ten tonnes, ten thousand kilos.
+[at 14.35]
+The commitment engine splits one order across five farms.
+[at 18.15]
+Farmers get a WhatsApp in Arabic, and reply with one word.
+[at 22.15]
+Seven weighted signals. No farm over twenty-three percent.
+[at 26.2]
+SooqRoot. Confirmed before harvest.

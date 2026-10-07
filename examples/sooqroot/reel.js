@@ -1,8 +1,10 @@
-// SooqRoot: 30 s vertical launch video, 1080x1920, no voiceover. Cuts land on the bars of a
-// 120 bpm music bed (bed.py), so every scene starts on a downbeat. Screens are the real app
+// SooqRoot: 30 s vertical launch video, 1080x1920, with a voiceover (am_michael). Cuts land on the
+// bars of a 120 bpm music bed (bed.py), and each voice line starts on its scene's downbeat ([at] in
+// script.txt); the typed headlines type as their words are spoken. Screens are the real app
 // running locally; every figure in SooqRoot is illustrative demo data, so only the engine's
 // rules are counted up, never business numbers.
 import { run, E } from './engine.js';
+import { wordOf } from './motion.js';
 import bg from './plates/bg.js';
 import photo from './plates/photo.js';
 import typewrite from './plates/typewrite.js';
@@ -21,15 +23,20 @@ run({
   height: 1920,
   fps: 30,
   background: 'var(--ink)',
+  audio: 'audio/voiceover.wav',
+  words: 'data/words.json',
+  env: 'data/audio.json',
   timeline: () => [
     E(bg({ angle: 170 }), 0, END),
     E(photo({ src: 'assets/agri-network.jpg', from: { x: 0.55, y: 0.5, zoom: 1.0 }, to: { x: 0.48, y: 0.45, zoom: 1.18 }, dim: 0.95, shade: 'bottom' }), 0, B(3)),
     E(typewrite({
       eyebrow: 'The Procurement Operating System for UAE Local Food',
       lines: ['One Order.', 'Many Farms.', 'Confirmed', 'Before Harvest.'], accent: [2, 3],
-      size: 112, top: 1060, at: 0.35, cps: 20, gap: 0.22,
+      size: 112, top: 1060, cps: 22,
+      times: ['One', 'Many', 'Confirmed', 'Before'].map((w) => wordOf(w)?.s ?? 0.35),
     }), 0, B(3)),
-    E(typewrite({ lines: ['Buyers don’t', 'write purchase', 'orders.', 'They write', 'sentences.'], accent: [3, 4], size: 112, at: 0.2, cps: 26, gap: 0.2 }), B(3), B(5)),
+    E(typewrite({ lines: ['Buyers don’t', 'write purchase', 'orders.', 'They write', 'sentences.'], accent: [3, 4], size: 112, cps: 28,
+      times: [['Buyers', 0], ['write', 6], ['orders', 6], ['They', 6], ['sentences', 6]].map(([w, a]) => wordOf(w, a)?.s ?? B(3) + 0.2) }), B(3), B(5)),
 
     E(head('AI Demand Translator', 'SooqRoot reads the sentence.'), B(5), B(7)),
     E(screen({ ...view, src: 'assets/demand_out.jpg',

@@ -1,4 +1,4 @@
-// CACK: 15 s cinematic sequence, 1920x1080. Kinetic typography, smooth shape transitions, 3D
+// CACK: 15 s cinematic sequence, 1920x1080, with a voiceover (am_onyx). Kinetic typography, smooth shape transitions, 3D
 // elements and one seamless camera move. Words are CACK's own phrases. No people, no footage and
 // no detection claims: the "crowd" is abstract shapes, and one of them moves out of place.
 import { run, E } from './engine.js';
@@ -34,6 +34,9 @@ run({
   height: 1080,
   fps: 30,
   background: 'var(--ink)',
+  audio: 'audio/voiceover.wav',
+  words: 'data/words.json',
+  env: 'data/audio.json',
   timeline: () => [
     E(bg({ angle: 165 }), 0, END),
     E(space({

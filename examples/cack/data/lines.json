@@ -1,0 +1,35 @@
+{
+ "duration": 14.976,
+ "lines": [
+  {
+   "i": 0,
+   "text": "It learns what normal looks like.",
+   "s": 0.45,
+   "e": 2.44
+  },
+  {
+   "i": 1,
+   "text": "Then it flags out-of-place behaviour,",
+   "s": 3.3,
+   "e": 5.543
+  },
+  {
+   "i": 2,
+   "text": "and glitches in reality.",
+   "s": 6.5,
+   "e": 8.247
+  },
+  {
+   "i": 3,
+   "text": "With calibrated, explained evidence.",
+   "s": 9.5,
+   "e": 11.853
+  },
+  {
+   "i": 4,
+   "text": "CACK. By Kanban Studios.",
+   "s": 12.5,
+   "e": 14.376
+  }
+ ]
+}

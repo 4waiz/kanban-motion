@@ -10,7 +10,8 @@ Default engine is Kokoro (open-weight, runs locally, no API key):
     uv run voiceover.py script.txt -o audio/voiceover.wav
 
 Script format: one spoken line per line. A blank line adds a longer pause,
-`[pause 1.2]` on its own line adds an exact pause, and `#` starts a comment.
+`[pause 1.2]` on its own line adds an exact pause, `[at 6.0]` starts the next line at
+exactly 6.0 s (to fit a voice onto an existing cut or beat), and `#` starts a comment.
 
 Writes the WAV plus a lines file (default: <out>.lines.json) holding the exact
 start and end of every line. align.py uses it to keep word timings honest.
@@ -76,8 +77,11 @@ def parse_script(text: str):
         if line.startswith("#"):
             continue
         m = re.fullmatch(r"\[pause\s+([\d.]+)\s*s?\]", line, re.I)
+        at = re.fullmatch(r"\[at\s+([\d.]+)\s*s?\]", line, re.I)
         if m:
             items.append(("pause", float(m.group(1))))
+        elif at:
+            items.append(("at", float(at.group(1))))
         elif not line:
             if items and items[-1][0] == "line":
                 items.append(("blank", None))
@@ -191,10 +195,13 @@ def main():
            if a.engine == "kokoro" else SystemEngine(a.voice, a.speed))
 
     sr, chunks, lines, n = None, [], [], 0  # n = samples written after the lead-in
-    pending_pause = 0.0
+    pending_pause, pending_at = 0.0, None
     for kind, val in items:
         if kind == "pause":
             pending_pause += val
+            continue
+        if kind == "at":
+            pending_at = val
             continue
         if kind == "blank":
             pending_pause += a.gap
@@ -204,7 +211,13 @@ def main():
         if rate != sr:
             sys.exit(f"sample rate changed mid-script ({rate} vs {sr})")
         audio = trim(audio, sr)
-        if lines:
+        if pending_at is not None:  # an exact start time wins over gaps and pauses
+            now = a.lead + n / sr
+            if pending_at < now - 0.005:
+                print(f"  warning: line {len(lines) + 1} should start at {pending_at:.2f}s "
+                      f"but the previous line runs to {now:.2f}s; shorten it or raise --speed", file=sys.stderr)
+            pending_pause, pending_at = max(0.0, pending_at - now), None
+        elif lines:
             pending_pause += a.gap
         if pending_pause:
             silence = np.zeros(int(round(pending_pause * sr)), np.float32)

@@ -11,15 +11,15 @@
 
 Kanban Motion is a Claude Code skill that turns a project, a website or a script into a short, polished video. Every frame is a pure function of time, every word lands on the voiceover, and the preview is identical to the export.
 
-[![Kanban Motion demo](docs/poster.jpg)](https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.2.0/docs/kanban-motion-demo.mp4)
+[![Kanban Motion demo](docs/poster.jpg)](https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.3.0/docs/kanban-motion-demo.mp4)
 
 *The demo above was made entirely with this skill: the script, the Kokoro voice, the word alignment, the plates, the generated music bed, the CC0 effects, the -14 LUFS mix and the poster frame. Click it to play with sound.*
 
 ## Examples
 
-Five videos made with Kanban Motion from Kanban Studios projects, each from the prompt shown above it. The previews loop silently. Click one to play the full video with sound. Every reel's source is in [`examples/`](examples).
+Five videos made with Kanban Motion from Kanban Studios projects, each from the prompt shown above it. Every one has a voiceover, five different Kokoro voices all generated locally. The previews loop silently; click one to play the full video with sound. Every reel's source is in [`examples/`](examples).
 
-### BLUEBAN 813 · 30 s · 16:9 · voiceover
+### BLUEBAN 813 · 30 s · 16:9 · voice: bm_george
 
 ```text
 /kanban-motion Make a 30-second 16:9 launch video for BLUEBAN 813 from its repo. Open on the real
@@ -30,22 +30,23 @@ the camera into the live dashboard onto the bloom-like patch and the incident ca
 male voice, the app's deep blues and Exo 2, logo end card.
 ```
 
-[![BLUEBAN 813 launch video](docs/examples/blueban-813.webp)](https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.2.0/docs/examples/blueban-813.mp4)
+[![BLUEBAN 813 launch video](docs/examples/blueban-813.webp)](https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.3.0/docs/examples/blueban-813.mp4)
 
-### SooqRoot · 30 s · 9:16 · cut on the beat
+### SooqRoot · 30 s · 9:16 · voice: am_michael, cut on the beat
 
 ```text
-/kanban-motion Create a 30-second vertical 9:16 launch video for SooqRoot. No voiceover: cut on the
-bars of a 120 bpm track. Type the hero line letter by letter over the farm-network art: "One Order.
-Many Farms. Confirmed Before Harvest." Then show the real app running locally: the Demand Translator
-turning "ten tonnes" into 10,000 kg, the Commitment Engine splitting the order across five farms (max
-23% each), and the farmer's WhatsApp in Arabic with a one-word reply. Count up the engine's rules and
-end on a logo reveal with the hackathon badge. SooqRoot greens on charcoal, Plus Jakarta Sans.
+/kanban-motion Create a 30-second vertical 9:16 launch video for SooqRoot. Cut on the bars of a
+120 bpm track, with a male voiceover whose lines land on those downbeats. Type the hero line letter
+by letter as it's spoken, over the farm-network art: "One Order. Many Farms. Confirmed Before Harvest."
+Then show the real app running locally: the Demand Translator turning "ten tonnes" into 10,000 kg,
+the Commitment Engine splitting the order across five farms (max 23% each), and the farmer's WhatsApp
+in Arabic with a one-word reply. Count up the engine's rules and end on a logo reveal with the
+hackathon badge. SooqRoot greens on charcoal, Plus Jakarta Sans.
 ```
 
-<a href="https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.2.0/docs/examples/sooqroot.mp4"><img src="docs/examples/sooqroot.webp" alt="SooqRoot launch video" width="340"></a>
+<a href="https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.3.0/docs/examples/sooqroot.mp4"><img src="docs/examples/sooqroot.webp" alt="SooqRoot launch video" width="340"></a>
 
-### Encirra · 30 s · 1:1 · voiceover
+### Encirra · 30 s · 1:1 · voice: af_nova
 
 ```text
 /kanban-motion Make a 30-second square 1:1 explainer for Encirra, my CBRN command-centre concept.
@@ -55,29 +56,31 @@ sources correlated, the ground robot sent, the drone re-tasked, a person validat
 a concept on synthetic data. Female voice, Encirra's cyan-on-graphite palette, IBM Plex Sans Condensed.
 ```
 
-<a href="https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.2.0/docs/examples/encirra.mp4"><img src="docs/examples/encirra.webp" alt="Encirra explainer" width="480"></a>
+<a href="https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.3.0/docs/examples/encirra.mp4"><img src="docs/examples/encirra.webp" alt="Encirra explainer" width="480"></a>
 
-### CACK · 15 s · 16:9 · cinematic 3D
+### CACK · 15 s · 16:9 · cinematic 3D · voice: am_onyx
 
 ```text
 /kanban-motion "Create a 15-second cinematic motion graphics sequence with kinetic typography, smooth
 shape transitions, 3D elements and seamless camera movement." For CACK: its hexagon mark morphing into
 an icosahedron, a crowd of shapes with one moving out of place under the pink target box, a glitching
-solid, calibration rings, and CACK's own phrases set in 3D. Neon cyan and violet from its site.
+solid, calibration rings, and CACK's own phrases set in 3D. A deep male voice speaks each phrase as
+it lands. Neon cyan and violet from its site.
 ```
 
-[![CACK cinematic sequence](docs/examples/cack.webp)](https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.2.0/docs/examples/cack.mp4)
+[![CACK cinematic sequence](docs/examples/cack.webp)](https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.3.0/docs/examples/cack.mp4)
 
-### ROADTRACE · 15 s · 16:9 · cinematic 3D
+### ROADTRACE · 15 s · 16:9 · cinematic 3D · voice: af_bella
 
 ```text
 /kanban-motion "Create a 15-second cinematic motion graphics sequence with kinetic typography, smooth
 shape transitions, 3D elements and seamless camera movement." For ROADTRACE: one chase shot behind a
 wireframe car on green lanes, past camera sites RT-01 to RT-04 that fire as it passes, the car morphing
-into its visual fingerprint, then rising into the simulation's own golden-hour render.
+into its visual fingerprint, then rising into the simulation's own golden-hour render. A female
+voice on each beat.
 ```
 
-[![ROADTRACE cinematic sequence](docs/examples/roadtrace.webp)](https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.2.0/docs/examples/roadtrace.mp4)
+[![ROADTRACE cinematic sequence](docs/examples/roadtrace.webp)](https://cdn.jsdelivr.net/gh/4waiz/kanban-motion@v1.3.0/docs/examples/roadtrace.mp4)
 
 Re-render any example after `npm install --prefix skills/kanban-motion/scripts`:
 

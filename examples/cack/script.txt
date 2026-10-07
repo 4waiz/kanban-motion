@@ -1,0 +1,11 @@
+# CACK: voice for the 15 s cinematic sequence (voice: am_onyx). Lines land with their 3D phrases.
+[at 0.45]
+It learns what normal looks like.
+[at 3.3]
+Then it flags out-of-place behaviour,
+[at 6.5]
+and glitches in reality.
+[at 9.5]
+With calibrated, explained evidence.
+[at 12.5]
+CACK. By Kanban Studios.

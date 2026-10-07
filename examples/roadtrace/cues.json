@@ -2,7 +2,7 @@
  "duration": 15,
  "music": {
   "file": "audio/music.mp3",
-  "db": -7,
+  "db": -11,
   "fade_in": 0.1,
   "fade_out": 1.2
  },
@@ -154,5 +154,13 @@
    "lp": 5000
   }
  ],
- "lufs": -14
+ "lufs": -14,
+ "voice": {
+  "file": "audio/voiceover.wav",
+  "db": 0
+ },
+ "duck": {
+  "music": 8,
+  "sfx": 5
+ }
 }

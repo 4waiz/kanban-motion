@@ -1,0 +1,41 @@
+{
+ "duration": 15.37,
+ "lines": [
+  {
+   "i": 0,
+   "text": "Every car leaves a trace.",
+   "s": 0.4,
+   "e": 1.749
+  },
+  {
+   "i": 1,
+   "text": "A real snapshot, at every camera.",
+   "s": 2.65,
+   "e": 4.622
+  },
+  {
+   "i": 2,
+   "text": "A visual fingerprint for every car.",
+   "s": 5.05,
+   "e": 6.921
+  },
+  {
+   "i": 3,
+   "text": "Type what you remember.",
+   "s": 7.85,
+   "e": 8.936
+  },
+  {
+   "i": 4,
+   "text": "Then follow the trace.",
+   "s": 10.25,
+   "e": 11.323
+  },
+  {
+   "i": 5,
+   "text": "Road trace. By Kanban Studios.",
+   "s": 12.6,
+   "e": 14.77
+  }
+ ]
+}

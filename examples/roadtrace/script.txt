@@ -1,0 +1,13 @@
+# ROADTRACE: voice for the 15 s cinematic sequence (voice: af_bella). Lines land with their 3D phrases.
+[at 0.4]
+Every car leaves a trace.
+[at 2.65]
+A real snapshot, at every camera.
+[at 5.05]
+A visual fingerprint for every car.
+[at 7.85]
+Type what you remember.
+[at 10.25]
+Then follow the trace.
+[at 12.6]
+Road trace. By Kanban Studios.

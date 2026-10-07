@@ -10,6 +10,7 @@ A voiceover is opt-in: add one when the user asks for narration or a voice, or p
 - **Conversational and specific.** Use the product's real claims and words, read aloud before committing, and avoid generic launch filler.
 - **Spell it as spoken.** "v2" becomes "version two", "10x" becomes "ten times", "SQL" becomes "sequel" or "S Q L". The written form can still appear on screen.
 - **Pauses.** A blank line doubles the gap; `[pause 0.8]` on its own line inserts an exact pause; `# comments` are ignored.
+- **Exact starts.** `[at 6.0]` on its own line starts the next line at exactly 6.0 s. Use it to fit a voice onto an edit that already exists, such as cuts on the bars of a music bed or the beats of a 3D camera move. The script warns if a line runs into the next one.
 
 ## Generate (Kokoro, local)
 

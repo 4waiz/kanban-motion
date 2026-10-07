@@ -30,6 +30,8 @@ export default function typewrite({
         t += txt.length / cps + gap;
         return d.lastChild;
       });
+      // lines never overlap, even when word timings are bunched up: each waits for the one before
+      for (let i = 1; i < starts.length; i++) starts[i] = Math.max(starts[i], starts[i - 1] + lines[i - 1].length / cps + 0.05);
       caret = document.createElement('i');
       caret.className = 'tw-caret';
     },
