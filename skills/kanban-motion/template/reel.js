@@ -23,16 +23,16 @@ run({
   words: 'data/words.json',     // from scripts/align.py
   env: 'data/audio.json',       // voice loudness envelope, also from align.py
   timeline: () => {
-    const end = (lineOf('Showreel')?.e ?? 8) + 2.4;
+    const end = (lineOf('Kanban Motion')?.e ?? 8) + 2.4;
     const t1 = cut('Every frame', 0.18, 2.2);
     const t2 = cut('Every word', 0.18, 4.6);
-    const t3 = cut('Showreel', 0.18, 6.6);
+    const t3 = cut('Kanban Motion', 0.18, 6.6);
     return [
       E(paper(), 0, end),
       E(say({ name: 'hook', text: 'Videos, written as code.' }), 0, t1),
       E(code({ title: 'plates/hook.js', code: SNIPPET, cps: 64, delay: 0.2 }), t1, t2),
       E(say({ name: 'sync', text: 'Every word lands on the voice.', size: 104 }), t2, t3),
-      E(outro({ title: 'Showreel', tagline: 'Motion graphics as code.', url: 'github.com/4waiz/showreel' }), t3, end),
+      E(outro({ title: 'Kanban Motion', tagline: 'Motion graphics as code.', url: 'github.com/4waiz/kanban-motion · made by Kanban Studios' }), t3, end),
     ];
   },
 });

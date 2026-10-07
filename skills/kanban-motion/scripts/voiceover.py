@@ -22,8 +22,8 @@ Options:
   --engine system             no download: Windows SAPI / macOS say / espeak-ng
   --list-voices               print Kokoro voices and exit
 
-Kokoro model files (~340 MB, once) are cached in ~/.cache/showreel/kokoro
-(override with SHOWREEL_MODELS).
+Kokoro model files (~340 MB, once) are cached in ~/.cache/kanban-motion/kokoro
+(override with KANBAN_MOTION_MODELS).
 """
 
 import argparse
@@ -46,7 +46,7 @@ VOICES_FILE = "voices-v1.0.bin"
 
 
 def model_dir() -> Path:
-    d = Path(os.environ.get("SHOWREEL_MODELS", Path.home() / ".cache" / "showreel")) / "kokoro"
+    d = Path(os.environ.get("KANBAN_MOTION_MODELS", Path.home() / ".cache" / "kanban-motion")) / "kokoro"
     d.mkdir(parents=True, exist_ok=True)
     return d
 

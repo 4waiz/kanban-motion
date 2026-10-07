@@ -17,7 +17,7 @@ A voiceover is opt-in: add one when the user asks for narration or a voice, or p
 uv run <skill-dir>/scripts/voiceover.py script.txt -o reel/audio/voiceover.wav --lines reel/data/lines.json
 ```
 
-- **First run:** uv installs `kokoro-onnx` into a cached environment, and the model (about 340 MB) downloads to `~/.cache/showreel/kokoro`. Set `SHOWREEL_MODELS` to cache it elsewhere, or use `--quality int8` for an 88 MB model with slightly lower quality.
+- **First run:** uv installs `kokoro-onnx` into a cached environment, and the model (about 340 MB) downloads to `~/.cache/kanban-motion/kokoro`. Set `KANBAN_MOTION_MODELS` to cache it elsewhere, or use `--quality int8` for an 88 MB model with slightly lower quality.
 - **Voices** (`--list-voices` prints them all):
   - **American female:** `af_heart` (best all-rounder), `af_bella`, `af_nova`, `af_sarah`, `af_sky`
   - **American male:** `am_michael`, `am_fenrir`, `am_onyx`, `am_adam`, `am_puck`
@@ -47,7 +47,7 @@ uv run <skill-dir>/scripts/align.py reel/audio/voiceover.wav --script script.txt
 import { cut, lineOf, wordOf, wordsIn } from './motion.js';
 cut('Every word lands')          // plate start: 0.18 s before the phrase
 lineOf('lands on the voice')     // { s, e, words: [{ w, s, e, line }] }
-wordOf('Showreel')               // { w, s, e } of the first match
+wordOf('Kanban')               // { w, s, e } of the first match
 wordsIn(plate.start, plate.end)  // everything spoken during a plate
 ```
 

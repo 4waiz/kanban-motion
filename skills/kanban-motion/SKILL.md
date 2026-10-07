@@ -1,14 +1,14 @@
 ---
-name: showreel
-description: "Make or edit code-driven motion graphics videos: launch videos, explainers and promos from a project, a website or a script, with a generated or recorded voiceover, a music bed and sound effects, all synced word by word. Works with the Motion as Code kit (voiceover-synced plates, preview, stills, render, SFX mix) or the bundled starter kit. Use for \"motion graphics\", \"motion as code\", \"edit the plate\", \"render the video\", \"swap the voiceover\", \"add a voiceover\", \"narrate this\", \"make a launch video\", \"turn this into a video\", \"promo video\", \"showreel\"."
+name: kanban-motion
+description: "Make or edit code-driven motion graphics videos: launch videos, explainers and promos from a project, a website or a script, with a generated or recorded voiceover, a music bed and sound effects, all synced word by word. Works with the Motion as Code kit (voiceover-synced plates, preview, stills, render, SFX mix) or the bundled starter kit. Use for \"motion graphics\", \"motion as code\", \"edit the plate\", \"render the video\", \"swap the voiceover\", \"add a voiceover\", \"narrate this\", \"make a launch video\", \"turn this into a video\", \"promo video\", \"kanban motion\"."
 ---
 
-# Showreel
+# Kanban Motion
 
-Motion graphics written as code and locked to a voice. This skill has two layers:
+Made by Kanban Studios. Motion graphics written as code and locked to a voice. This skill has two layers:
 
 1. **Motion as Code** (below, unchanged): the full workflow for the Motion as Code kit.
-2. **Showreel additions** (after it): a starter kit that needs no external project, voiceover generation and word alignment, launch-video planning (inspect, plan, tones, creative laws), an original music bed, a CC0 sound library and mixer, and delivery (poster frame and share copy).
+2. **Kanban Motion additions** (after it): a starter kit that needs no external project, voiceover generation and word alignment, launch-video planning (inspect, plan, tones, creative laws), an original music bed, a CC0 sound library and mixer, and delivery (poster frame and share copy).
 
 Use the kit when the user has it or is editing it. Otherwise use the starter kit. The same rules apply to both: plates are pure functions of time, check stills before rendering, and ask before a full render.
 
@@ -146,7 +146,7 @@ Study an existing plate and `_vo.ts` before writing a new one, and reuse the too
 
 ---
 
-# Showreel additions
+# Kanban Motion additions
 
 Everything below adds to the Motion as Code workflow above; none of it replaces it. `<skill-dir>` is the folder that contains this `SKILL.md` (Claude Code prints it as "Base directory for this skill"). Don't guess an install path.
 
@@ -158,13 +158,13 @@ Everything below adds to the Motion as Code workflow above; none of it replaces 
 | A new video from a project, a website, a script or an idea, with no kit around | Use the **starter kit** below, plus the launch workflow. |
 | "Make a launch video", "turn this into a video", "promo" | Run the **launch workflow** (inspect, plan, build, deliver) on whichever kit is available. |
 
-Output goes to `showreel-output/` in the current directory, or to a timestamped `showreel-output-YYYY-MM-DD-HHmmss/` if that folder exists. Inside it: `reel/` (the plates), `out/` (renders, mix, stills), `work/` (downloads, scratch), plus `plan.md`, `script.txt` and `share-copy.txt`.
+Output goes to `kanban-motion-output/` in the current directory, or to a timestamped `kanban-motion-output-YYYY-MM-DD-HHmmss/` if that folder exists. Inside it: `reel/` (the plates), `out/` (renders, mix, stills), `work/` (downloads, scratch), plus `plan.md`, `script.txt` and `share-copy.txt`.
 
 ## Starter kit
 
 A small, dependency-free version of the same idea: plain ES modules in a browser, frames captured by headless Chrome, encoded by ffmpeg. Requirements: Node 18+, Chrome or Edge, ffmpeg with libx264, and uv (for the audio scripts). Once per machine: `npm install --prefix <skill-dir>/scripts`.
 
-Copy `<skill-dir>/template/` to `showreel-output/reel/`. Before the first change, read `reel.js`, `engine.js` and one plate.
+Copy `<skill-dir>/template/` to `kanban-motion-output/reel/`. Before the first change, read `reel.js`, `engine.js` and one plate.
 
 | Path | Role |
 | --- | --- |
@@ -249,7 +249,7 @@ Music, effects and voice are written as one piece. Details are in [references/so
   ```
   Styles are `pad`, `pulse` and `beat`. For a track the user supplies, `uv run <skill-dir>/scripts/beats.py track.mp3` writes the same kind of beat grid. Never use a track whose licence is unclear.
 - **Effects**: `<skill-dir>/assets/sfx/` holds a curated CC0 library (impacts, interface, UI, casino, 32 keypresses). Read `assets/sfx/sfx-analysis.md` first: prefer low-risk warm sounds, and keep bright clicks for tiny accents.
-- **Mix**: list every cue in `reel/cues.json` (times can be anchors such as `"word:Showreel"`), then:
+- **Mix**: list every cue in `reel/cues.json` (times can be anchors such as `"word:Kanban"`), then:
   ```sh
   uv run <skill-dir>/scripts/mix.py reel/cues.json -o out/mix.wav
   ```

@@ -1,7 +1,7 @@
 // outro: the name lands, a plotter-pen underline draws itself, then tagline and URL.
 import { clamp, ease, range, spring } from '../motion.js';
 
-export default function outro({ title = 'Showreel', tagline = '', url = '', at = 0, name = 'outro' } = {}) {
+export default function outro({ title = 'Kanban Motion', tagline = '', url = '', at = 0, name = 'outro' } = {}) {
   let t1, line, sub, link;
   return {
     name,

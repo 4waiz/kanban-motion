@@ -1,4 +1,4 @@
-// showreel engine: plays plates in a browser preview and exposes the seek hook
+// kanban-motion engine: plays plates in a browser preview and exposes the seek hook
 // that scripts/render.mjs drives. You should not need to edit this file.
 //
 // A plate is { name, start, end, tail?, setup(root), draw(f) }.
@@ -32,7 +32,7 @@ export async function run({ width = 1920, height = 1080, fps = 30, timeline, aud
   if (words) {
     const w = await loadJSON(words);
     if (w) setWords(w);
-    else console.warn(`[showreel] ${words} not found; voice-synced plates fall back to their defaults`);
+    else console.warn(`[kanban-motion] ${words} not found; voice-synced plates fall back to their defaults`);
   }
   const envData = env ? await loadJSON(env) : null;
   const envAt = (t) => {

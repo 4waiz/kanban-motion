@@ -1,5 +1,5 @@
 {
- "duration": 9.34,
+ "duration": 9.66,
  "voice": {
   "file": "audio/voiceover.wav",
   "db": 0
@@ -156,12 +156,12 @@
   },
   {
    "file": "sfx:impact/impactSoft_medium_001.ogg",
-   "t": "word:Showreel-0.03",
+   "t": "word:Kanban-0.03",
    "db": -9
   },
   {
    "file": "sfx:impact/impactBell_heavy_000.ogg",
-   "t": "word:Showreel+0.25",
+   "t": "word:Motion+0.25",
    "db": -19,
    "lp": 5000
   }

@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 4waiz
+Copyright (c) 2026 Kanban Studios
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -22,6 +22,9 @@ SOFTWARE.
 
 ---
 
-The sound effects in skills/showreel/assets/sfx/ are public domain (CC0 1.0):
+The sound effects in skills/kanban-motion/assets/sfx/ are public domain (CC0 1.0):
 Kenney (https://kenney.nl) and "Keyboard Soundpack #1" by unicae_games
 (https://opengameart.org/content/keyboard-soundpack-1-typing-and-single-keystrokes).
+
+The Kanban Studios name and the KS logo (docs/brand/) are marks of Kanban Studios. They are not
+licensed under the MIT License above and may not be used to endorse or brand other work.

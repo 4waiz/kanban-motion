@@ -69,7 +69,7 @@ Safe picks:
   "voice": {"file": "audio/voiceover.wav", "db": 0},
   "music": {"file": "audio/music.wav", "db": -10, "fade_in": 0.3, "fade_out": 1.6},
   "sfx": [
-    {"file": "sfx:impact/impactSoft_medium_001.ogg", "t": "word:Showreel-0.03", "db": -9},
+    {"file": "sfx:impact/impactSoft_medium_001.ogg", "t": "word:Kanban-0.03", "db": -9},
     {"file": "sfx:keyboard/keypress-007.wav", "t": 4.21, "db": -26, "lp": 6500, "pan": -0.2},
     {"file": "sfx:interface/drop_002.ogg", "t": "line:every word lands", "db": -17}
   ],

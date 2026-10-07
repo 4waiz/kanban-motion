@@ -1,8 +1,17 @@
-# Showreel
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/brand/ks-light.png">
+    <img src="docs/brand/ks-dark.png" alt="Kanban Studios" width="96">
+  </picture>
+</p>
 
-**Motion graphics as code, locked to a voice.** A Claude Code skill that turns a project, a website or a script into a short, polished video. Every frame is a pure function of time, every word lands on the voiceover, and the preview is identical to the export.
+<h1 align="center">Kanban Motion</h1>
 
-[![Showreel demo](docs/poster.jpg)](docs/showreel-demo.mp4)
+<p align="center"><b>Motion graphics as code, locked to a voice.</b><br>Made by <b>Kanban Studios</b>.</p>
+
+Kanban Motion is a Claude Code skill that turns a project, a website or a script into a short, polished video. Every frame is a pure function of time, every word lands on the voiceover, and the preview is identical to the export.
+
+[![Kanban Motion demo](docs/poster.jpg)](docs/kanban-motion-demo.mp4)
 
 *The demo above was made entirely with this skill: the script, the Kokoro voice, the word alignment, the plates, the generated music bed, the CC0 effects, the -14 LUFS mix and the poster frame. Click it to play.*
 
@@ -20,23 +29,23 @@
 **Claude Code plugin**
 
 ```
-/plugin marketplace add 4waiz/showreel
-/plugin install showreel@showreel
+/plugin marketplace add 4waiz/kanban-motion
+/plugin install kanban-motion@kanban-motion
 ```
 
 **Or copy the skill**
 
 ```bash
-git clone https://github.com/4waiz/showreel
-cp -r showreel/skills/showreel ~/.claude/skills/showreel
+git clone https://github.com/4waiz/kanban-motion.git
+cp -r kanban-motion/skills/kanban-motion ~/.claude/skills/kanban-motion
 ```
 
-**Or upload it to claude.ai.** Download `showreel.skill.zip` from [Releases](https://github.com/4waiz/showreel/releases) and add it under Settings > Capabilities > Skills.
+**Or upload it to claude.ai.** Download `kanban-motion.skill.zip` from [Releases](https://github.com/4waiz/kanban-motion/releases) and add it under Settings > Capabilities > Skills.
 
 **One-time setup** (renderer dependency):
 
 ```bash
-npm install --prefix ~/.claude/skills/showreel/scripts
+npm install --prefix ~/.claude/skills/kanban-motion/scripts
 ```
 
 Requirements:
@@ -51,6 +60,7 @@ Talk to Claude Code:
 
 - "Make a launch video for this project, with a voiceover."
 - "Turn https://example.com into a 20 second promo, chaotic tone, vertical."
+- "Make a vertical Instagram ad for this repo."
 - "Add a British male voiceover and re-time the plates."
 - "Swap the voiceover for my recording in audio/me.wav."
 - "Render the video." (it always asks before a full render)
@@ -76,6 +86,7 @@ reel/ plates + timeline ─▶ render.mjs stills (check) ─▶ cues.json ─▶
 
 ## Credits
 
+- Made by **Kanban Studios**.
 - Extends the **Motion as Code** workflow (its kit's engine and visual style are pdoom-video by mexicat, MIT) and draws on ideas from the **/brag** launch-video skill.
 - Voice: [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) (Apache-2.0) via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx).
 - Alignment: [faster-whisper](https://github.com/SYSTRAN/faster-whisper) (MIT).
@@ -83,4 +94,4 @@ reel/ plates + timeline ─▶ render.mjs stills (check) ─▶ cues.json ─▶
 
 ## License
 
-[MIT](LICENSE) for the code and docs. The bundled sound effects are CC0.
+[MIT](LICENSE) © Kanban Studios for the code and docs. The bundled sound effects are CC0. The Kanban Studios name and KS logo are the studio's marks and are not covered by the MIT license.

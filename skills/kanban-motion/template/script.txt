@@ -1,6 +1,6 @@
-# showreel demo script
+# kanban-motion demo script
 Videos, written as code.
 Every frame is a function of time.
 Every word lands on the voice.
 
-Showreel.
+Kanban Motion.

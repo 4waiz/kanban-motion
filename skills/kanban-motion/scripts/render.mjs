@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// showreel renderer: headless Chrome -> raw frames -> ffmpeg. Frame-exact, so the
+// kanban-motion renderer: headless Chrome -> raw frames -> ffmpeg. Frame-exact, so the
 // preview and the exported video are identical.
 //
 //   node render.mjs preview --dir reel [--port 5173]   (live preview in your browser)

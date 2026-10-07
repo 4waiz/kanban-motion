@@ -1,4 +1,4 @@
-// showreel motion toolkit: tiny, deterministic helpers.
+// kanban-motion toolkit: tiny, deterministic helpers.
 // Every value a plate draws must come from these + time. No Math.random, no Date.now.
 
 export const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));

@@ -56,7 +56,7 @@ If none of these fit, ask the user what the video is about.
 
 ## 2. Plan
 
-Write `showreel-output/plan.md`:
+Write `kanban-motion-output/plan.md`:
 
 ```markdown
 # Plan: <name>
