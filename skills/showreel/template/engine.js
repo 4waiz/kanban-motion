@@ -44,6 +44,12 @@ export async function run({ width = 1920, height = 1080, fps = 30, timeline, aud
   const plates = typeof timeline === 'function' ? timeline() : timeline;
   const duration = Math.max(...plates.map((p) => p.end));
 
+  // Hidden plates keep their layout (so fonts and images load up front) but nothing inside them
+  // can show: !important beats any inline `visibility: visible` a plate sets on its children.
+  const rule = document.createElement('style');
+  rule.textContent = '.plate.off, .plate.off * { visibility: hidden !important; }';
+  document.head.appendChild(rule);
+
   const stage = document.createElement('div');
   stage.id = 'stage';
   Object.assign(stage.style, {
@@ -54,8 +60,8 @@ export async function run({ width = 1920, height = 1080, fps = 30, timeline, aud
 
   for (const p of plates) {
     p.root = document.createElement('div');
-    p.root.className = 'plate plate-' + p.name;
-    Object.assign(p.root.style, { position: 'absolute', inset: 0, visibility: 'hidden' });
+    p.root.className = 'plate off plate-' + p.name;
+    Object.assign(p.root.style, { position: 'absolute', inset: 0 });
     stage.appendChild(p.root);
     await p.setup?.(p.root, { width, height, fps });
   }
@@ -71,7 +77,7 @@ export async function run({ width = 1920, height = 1080, fps = 30, timeline, aud
     const pending = [];
     for (const p of plates) {
       const live = t >= p.start && t < p.end + (p.tail || 0) && (!only || p.name === only);
-      p.root.style.visibility = live ? 'visible' : 'hidden';
+      p.root.classList.toggle('off', !live);
       if (!live) continue;
       const lt = t - p.start, dur = p.end - p.start;
       const r = p.draw({ t, lt, p: lt / dur, dur, env: envAt(t), fps });
