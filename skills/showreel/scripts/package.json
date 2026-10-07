@@ -1,0 +1,9 @@
+{
+  "name": "showreel-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Renderer for showreel: headless Chrome frames piped to ffmpeg.",
+  "dependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

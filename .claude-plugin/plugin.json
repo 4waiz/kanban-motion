@@ -1,0 +1,13 @@
+{
+  "name": "showreel",
+  "version": "1.0.0",
+  "description": "Motion graphics as code, locked to a voice: launch videos and explainers from a project, a website or a script, with a local Kokoro voiceover, word-level sync, an original music bed, CC0 sound effects and a mastered mix.",
+  "author": {
+    "name": "4waiz",
+    "url": "https://github.com/4waiz"
+  },
+  "homepage": "https://github.com/4waiz/showreel",
+  "repository": "https://github.com/4waiz/showreel",
+  "license": "MIT",
+  "keywords": ["video", "motion-graphics", "voiceover", "tts", "launch-video", "ffmpeg", "skill"]
+}

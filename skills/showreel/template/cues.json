@@ -1,0 +1,174 @@
+{
+ "duration": 9.34,
+ "voice": {
+  "file": "audio/voiceover.wav",
+  "db": 0
+ },
+ "music": {
+  "file": "audio/music.mp3",
+  "db": -11,
+  "fade_in": 0.2,
+  "fade_out": 1.4
+ },
+ "sfx": [
+  {
+   "file": "sfx:interface/drop_002.ogg",
+   "t": "word:Videos-0.04",
+   "db": -17
+  },
+  {
+   "file": "sfx:keyboard/keypress-001.wav",
+   "t": 2.063,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-008.wav",
+   "t": 2.141,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-015.wav",
+   "t": 2.219,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-022.wav",
+   "t": 2.297,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-029.wav",
+   "t": 2.376,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-004.wav",
+   "t": 2.454,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-011.wav",
+   "t": 2.532,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-018.wav",
+   "t": 2.61,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-025.wav",
+   "t": 2.688,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-032.wav",
+   "t": 2.766,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-007.wav",
+   "t": 2.844,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-014.wav",
+   "t": 2.922,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-021.wav",
+   "t": 3.001,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-028.wav",
+   "t": 3.079,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-003.wav",
+   "t": 3.157,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-010.wav",
+   "t": 3.235,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-017.wav",
+   "t": 3.313,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.0
+  },
+  {
+   "file": "sfx:keyboard/keypress-024.wav",
+   "t": 3.391,
+   "db": -26,
+   "lp": 6500,
+   "pan": 0.2
+  },
+  {
+   "file": "sfx:keyboard/keypress-031.wav",
+   "t": 3.469,
+   "db": -26,
+   "lp": 6500,
+   "pan": -0.2
+  },
+  {
+   "file": "sfx:interface/click_003.ogg",
+   "t": "word:Every word-0.02",
+   "db": -20
+  },
+  {
+   "file": "sfx:impact/impactSoft_medium_001.ogg",
+   "t": "word:Showreel-0.03",
+   "db": -9
+  },
+  {
+   "file": "sfx:impact/impactBell_heavy_000.ogg",
+   "t": "word:Showreel+0.25",
+   "db": -19,
+   "lp": 5000
+  }
+ ],
+ "duck": {
+  "music": 8,
+  "sfx": 5
+ },
+ "lufs": -14
+}

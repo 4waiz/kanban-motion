@@ -1,0 +1,23 @@
+{
+  "name": "showreel",
+  "owner": {
+    "name": "4waiz"
+  },
+  "metadata": {
+    "description": "Showreel: motion graphics as code, locked to a voice."
+  },
+  "plugins": [
+    {
+      "name": "showreel",
+      "source": "./",
+      "description": "Launch videos, explainers and promos from a project, a website or a script, with voiceover, word-level sync, music, sound effects and a mastered mix.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": [
+        "video",
+        "motion-graphics",
+        "voiceover"
+      ]
+    }
+  ]
+}

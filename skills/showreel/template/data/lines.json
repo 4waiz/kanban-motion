@@ -1,0 +1,29 @@
+{
+ "duration": 7.54,
+ "lines": [
+  {
+   "i": 0,
+   "text": "Videos, written as code.",
+   "s": 0.25,
+   "e": 1.723
+  },
+  {
+   "i": 1,
+   "text": "Every frame is a function of time.",
+   "s": 2.043,
+   "e": 3.777
+  },
+  {
+   "i": 2,
+   "text": "Every word lands on the voice.",
+   "s": 4.097,
+   "e": 5.657
+  },
+  {
+   "i": 3,
+   "text": "Showreel.",
+   "s": 6.297,
+   "e": 6.94
+  }
+ ]
+}
