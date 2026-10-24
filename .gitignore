@@ -2,3 +2,12 @@ node_modules/
 __pycache__/
 *.part
 examples/*/audio/music.wav
+
+# Environment files and secrets: never commit real keys
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+*.pem
+*.key
